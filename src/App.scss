@@ -1,0 +1,56 @@
+.App{
+    height: 100vh;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+
+    main{
+        display: flex;
+        background: linear-gradient(black, rgb(68, 68, 68));
+        flex: 1;
+        overflow: hidden;
+
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+        }
+    }
+    .ImageSide{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 400px;
+        filter: drop-shadow(0 0 10px rgb(124, 29, 212));
+        img{
+            max-width: 400px;
+            margin-top: 1rem;
+        }
+
+        @media screen and (max-width: 768px) {
+            width: 100%;
+            img{
+                 max-width: 250px;
+             }
+         }
+    }
+    .Options{
+        width: 100%;
+        background-color: #272727;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        border-bottom: 3px solid rgb(124, 29, 212);
+
+        button{
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            background: linear-gradient(rgb(124, 29, 212), rgb(85, 36, 131));
+            color: white;
+            &:hover{
+                filter: drop-shadow(0 0 5px rgb(124, 29, 212));
+            }
+        }
+    }
+}

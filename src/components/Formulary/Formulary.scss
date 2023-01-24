@@ -1,0 +1,37 @@
+.Formulary{
+    width: 100%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    h1{
+        color: white;
+        text-shadow: 0 2px 1px rgb(124, 29, 212);
+        text-transform: uppercase;
+    }
+    p{
+        color: white;
+        margin: 0.5rem 0;
+        text-align: center;
+        padding: 0 0.4rem;
+    }
+    input{
+        padding: 0.5rem 1rem;
+        width: 70%;
+        border: none;
+        border-radius: 20px;
+        margin-bottom: 1rem;
+        outline: none;
+    }
+    button{
+        padding: 0.5rem 1rem;
+        border: none;
+        cursor: pointer;
+        border-radius: 20px;
+        background: linear-gradient(rgb(124, 29, 212), rgb(85, 36, 131));
+        color: white;
+        font-size: 1.2rem
+    }
+}
